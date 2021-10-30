@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas 4 HTML</title>
+</head>
+<body>
+    <form action="proses.php" method="post" name="fcontoh"> 
+    <style>
+        h2 {
+            text-align: center;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin:auto;
+        }
+    </style>
+    <h2>FORMULIR PPDB JALUR ZONASI TAHUN 2020</h2>
+        <table>
+            <tr>
+                <th>No</th>
+                <th colspan="2">INFO PENDAFTARAN</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td><label for="fnisn">NISN</label></td>
+                <td><input type="text" id="fnisn" name="fnisn" required></td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td><label for="fsekolah">Asal Sekolah</label></td>
+                <td><input type="text" id="fsekolah" name="fsekolah" required></td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td><label for="flulus">Tahun Lulus</label></td>
+                <td><input type="text" id="flulus" name="flulus" required></td>
+            </tr>
+            <tr>
+                <th colspan="3">DATA CALON PESERTA</th>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td><label for="fnama">Nama Peserta</label></td>
+                <td><input type="text" id="fnama" name="fnama" required></td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td><label for="fnik">NIK</label></td>
+                <td><input type="text" id="fnik" name="fnik" required></td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td><label for="fttl">Tempat/Tanggal Lahir</label></td>
+                <td><input type="text" id="fttl" name="fttl"><input type="date" id="fttl" name="fttl" required></td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td><label for="fkel">Jenis Kelamin</label></td>
+                <td>
+                    <select id="fkel" name="fkel" required>
+                        <option value="Laki">Laki-laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td>Alamat</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td><label for="fdesa">Desa/Kelurahan</label></td>
+                <td><input type="text" id="fdesa" name="fdesa" required></td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td><label for="fkec">Kecamatan</label></td>
+                <td><input type="text" id="fkec" name="fkec" required></td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td><label for="fkab">Kabupaten</label></td>
+                <td><input type="text" id="fkab" name="fkab" required></td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td><label for="fprov">Provinsi</label></td>
+                <td><input type="text" id="fprov" name="fprov" required></td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td><label for="femail">Email Aktif</label></td>
+                <td><input type="email" id="femail" name="femail" required></td>
+            </tr>
+            <tr>
+                <th colspan="3">DATA ORANG TUA</th>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td><label for="fkk">Nomor Kartu Keluarga</label></td>
+                <td><input type="text" id="fkk" name="fkk" required></td>
+            </tr>
+            <tr>
+                <td>11.</td>
+                <td><label for="fayah">Nama Ayah Kandung</label></td>
+                <td><input type="text" id="fayah" name="fayah" required></input></td>
+            </tr>
+            <tr>
+                <td>12.</td>
+                <td><label for="fagama">Agama</label></td>
+                <td><input type="text" id="fagama" name="fagama" required></td>
+            </tr>
+            <tr>
+                <td>13.</td>
+                <td><label for="fkerja">Pekerjaan</label></td>
+                <td><input type="text" id="fkerja" name="fkerja" required></td>
+            </tr>
+            <tr>
+                <td>14.</td>
+                <td><label for="fibu">Nama Ibu Kandung</label></td>
+                <td><input type="text" id="fibu" name="fibu" required></td>
+            </tr>
+            <tr>
+                <td>15.</td>
+                <td><label for="fagama2">Agama</label></td>
+                <td><input type="text" id="fagama2" name="fagama2" required></td>
+            </tr>
+            <tr>
+                <td>16.</td>
+                <td><label for="fkerja2">Pekerjaan</label></td>
+                <td><input type="text" id="fkerja2" name="fkerja2" required></td>
+            </tr>
+            <tr>
+                <td>17.</td>
+                <td>Alamat Orang Tua</label></td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td><label for="fdesa2">Desa/Kelurahan</label></td>
+                <td><input type="text" id="fdesa2" name="fdesa2" required></td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td><label for="fkec2">Kecamatan</label></td>
+                <td><input type="text" id="fkec2" name="fkec2" required></td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td><label for="fkab2">Kabupaten</label></td>
+                <td><input type="text" id="fkab2" name="fkab2" required></td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td><label for="fprov2">Provinsi</label></td>
+                <td><input type="text" id="fprov2" name="fprov2" required></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="right"><input type="submit" name="fsubmit" value="KIRIM"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
