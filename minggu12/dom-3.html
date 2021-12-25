@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>DOM API Javascript</title>
+    </head>
+    <body>
+        <h2 style ="text-align: center;">Semut</h2>
+        <p class="paragraf">Semut termasuk di antara 10.000 spesies serangga.Semut memiliki kebiasaan sosial dan hidup bersama koloni.Dilansir dari Encyclopaedia Britannica,semut biasanya akan banyak keluar ke permukaan pada musim panas.Semut memiliki ukuran sekitar 2-2,5 milimeter atau sekitar 0,08-1 inchi.</p>
+        <p class="paragraf">Terdapat tiga kasta dalam koloni,yaitu ratu,laki-laki,dan pekerja.Beberapa spesies semut hidup di dalam sarang,dan yang lainnya keluar sebagai parasit atau pemburu makanan.Kebanyakan semut hidup di sarang,yang terletak di bawah tanah,bawah batu,maupun di bawah bangunan yang terbuat dari pasir atau kerikil.</p>
+        <p class="paragraf">Komunitas semut dipimpin oleh seorang ratu yang juga berfungsi untuk bertelur ribuan semut. Ratu memastikan kelangsungan hidup koloni. Baca juga: Serba-serbi Hewan, Kenapa Semut Tidak Pernah Alami Macet? Kemudian semut pekerja, kebanyakan semut perempuan yang tidak memiliki sayap. Mereka mencari makanan, bekerja di sarang, melindungi komunitas, dan tentunya merawat anak-anak ratu.</p>
+        
+        <script>
+            var paragraf = document.getElementsByClassName("paragraf");
+            setInterval(function () {
+                paragraf[0].style.color = "red";
+                paragraf[1].style.color = "green";
+                paragraf[2].style.color = "blue";
+
+                setTimeout(function () {
+                    paragraf[0].style.color = "black";
+                    paragraf[1].style.color = "black";
+                    paragraf[2].style.color = "black";
+                }, 500);
+            }, 1000);
+        </script>
+    </body>
+</html>
