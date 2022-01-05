@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LATIHAN AJAX DAN JSON</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <h1 style="text-align:center">LATIHAN MANDIRI AJAX DAN JSON</h1>
+        <p id="demo"></p>
+        <script type="text/javascript">
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var data=JSON.parse(xhttp.responseText);
+                    data.forEach(function(element) {
+                        document.getElementById("demo").innerHTML +="NIM :" +
+                        element.nim + "<br>Nama :" + element.nama + "<br>Alamat :" +
+                        element.alamat + "<br>Keahlian : "+ element.MK[0].nama_mk +"<br><br>"; 
+                    });
+                }
+            };
+            xhttp.open("GET", "data.json", true);
+            xhttp.send();
+        </script>
+    </body>
+</html>
